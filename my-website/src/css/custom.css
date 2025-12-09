@@ -1,0 +1,76 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Custom Color Palette - Placeholder values, replace with chosen brand colors */
+  /* Ensure WCAG 2.1 AA contrast compliance for all colors */
+  --ifm-color-primary: #007bff; /* Example: A shade of blue */
+  --ifm-color-primary-dark: #0069d9;
+  --ifm-color-primary-darker: #0056b3;
+  --ifm-color-primary-darkest: #004085;
+  --ifm-color-primary-light: #3395ff;
+  --ifm-color-primary-lighter: #66b0ff;
+  --ifm-color-primary-lightest: #99ccff;
+
+  --ifm-color-secondary: #6c757d; /* Example: A neutral grey */
+  --ifm-color-accent: #28a745;    /* Example: A success green */
+
+  /* Base Font Styles - Placeholder values, replace with chosen fonts */
+  --ifm-font-family-base: 'Roboto', sans-serif; /* Example: A modern sans-serif */
+  --ifm-font-family-monospace: 'Fira Code', monospace; /* Example: A popular monospaced font */
+  --ifm-global-font-size: 16px;
+
+  /* Code Block Styling (Light Mode) */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-code-background-color: #f6f8fa; /* Light background for code blocks */
+  --ifm-code-color: #24292e; /* Dark text for code blocks */
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  /* Custom Color Palette (Dark Mode) - Placeholder values, replace with chosen brand colors */
+  /* Ensure WCAG 2.1 AA contrast compliance for all colors in dark mode */
+  --ifm-color-primary: #6caffa; /* Example: A lighter shade of blue for dark mode */
+  --ifm-color-primary-dark: #4d90e0;
+  --ifm-color-primary-darker: #3d7ad6;
+  --ifm-color-primary-darkest: #2a5bb0;
+  --ifm-color-primary-light: #8dcbff;
+  --ifm-color-primary-lighter: #aedcff;
+  --ifm-color-primary-lightest: #cfefff;
+
+  --ifm-color-secondary: #adb5bd; /* Lighter neutral grey */
+  --ifm-color-accent: #2ecc71;    /* Lighter success green */
+
+  /* Code Block Styling (Dark Mode) */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
+  --ifm-code-background-color: #2d2d2d; /* Dark background for code blocks */
+  --ifm-code-color: #f8f8f2; /* Light text for code blocks */
+}
+
+/* Base Typography Overrides */
+html {
+  font-size: var(--ifm-global-font-size);
+  font-family: var(--ifm-font-family-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-font-family-base); /* Headings use base font for consistency */
+}
+
+code, pre {
+  font-family: var(--ifm-font-family-monospace);
+  background-color: var(--ifm-code-background-color);
+  color: var(--ifm-code-color);
+}
+
+pre {
+  border: 1px solid var(--ifm-color-emphasis-300); /* A subtle border for code blocks */
+  border-radius: var(--ifm-global-border-radius);
+  padding: 1rem;
+  overflow-x: auto; /* Enable horizontal scrolling for long lines */
+}

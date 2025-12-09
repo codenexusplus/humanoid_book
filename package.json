@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "my-website",
+=======
+  "name": "book-ai",
+>>>>>>> 007-rag-chatbot-integration
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,6 +15,7 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
+<<<<<<< HEAD
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc"
   },
@@ -28,6 +33,19 @@
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "typescript": "~5.6.2"
+=======
+    "write-heading-ids": "docusaurus write-heading-ids"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
+    "@docusaurus/tsconfig": "^3.9.2",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^1.2.1",
+    "prism-react-renderer": "^2.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+>>>>>>> 007-rag-chatbot-integration
   },
   "browserslist": {
     "production": [
@@ -36,6 +54,7 @@
       "not op_mini all"
     ],
     "development": [
+<<<<<<< HEAD
       "last 3 chrome version",
       "last 3 firefox version",
       "last 5 safari version"
@@ -43,5 +62,14 @@
   },
   "engines": {
     "node": ">=20.0"
+=======
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=16.14"
+>>>>>>> 007-rag-chatbot-integration
   }
 }

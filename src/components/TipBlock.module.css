@@ -1,0 +1,30 @@
+.tipBlock {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--ifm-global-border-radius);
+  border: 1px solid transparent;
+  background-color: var(--ifm-color-info-lighter);
+  border-color: var(--ifm-color-info);
+  color: var(--ifm-color-info-darkest);
+}
+
+.tipBlockTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-info-dark);
+}
+
+.tipBlock--info {
+  /* Inherits from .tipBlock for now, can be specialized */
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .tipBlock {
+  background-color: var(--ifm-color-info-darker);
+  border-color: var(--ifm-color-info-dark);
+  color: var(--ifm-color-info-lightest);
+}
+
+html[data-theme='dark'] .tipBlockTitle {
+  color: var(--ifm-color-info-light);
+}

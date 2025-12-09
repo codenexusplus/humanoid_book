@@ -1,0 +1,29 @@
+.architectureDiagramContainer {
+  position: relative;
+  margin: 1rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-border-radius);
+  overflow: hidden; /* Ensures annotations stay within bounds */
+}
+
+.diagramImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.responsive {
+  /* No specific styles here, just a class to indicate responsiveness */
+}
+
+.annotation {
+  position: absolute;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--ifm-global-border-radius);
+  font-size: 0.8em;
+  white-space: nowrap;
+  transform: translate(-50%, -50%); /* Center the annotation on its x,y position */
+  z-index: 10;
+}

@@ -1,0 +1,73 @@
+.exerciseBlock {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--ifm-global-border-radius);
+  border: 2px solid var(--ifm-color-info);
+  background-color: var(--ifm-background-color);
+}
+
+.exerciseBlockTitle {
+  color: var(--ifm-color-info-dark);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.exerciseBlockProblem {
+  margin-bottom: 1rem;
+}
+
+.exerciseBlockSolutionContainer {
+  margin-top: 1.5rem;
+  border-top: 1px dashed var(--ifm-color-gray-300);
+  padding-top: 1rem;
+}
+
+.toggleButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--ifm-global-border-radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.toggleButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.exerciseBlockSolution {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-success);
+  background-color: var(--ifm-color-success-lighter);
+  border-radius: var(--ifm-global-border-radius);
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .exerciseBlock {
+  border: 2px solid var(--ifm-color-info-dark);
+  background-color: var(--ifm-background-color);
+}
+
+html[data-theme='dark'] .exerciseBlockTitle {
+  color: var(--ifm-color-info-light);
+}
+
+html[data-theme='dark'] .exerciseBlockSolutionContainer {
+  border-top: 1px dashed var(--ifm-color-gray-700);
+}
+
+html[data-theme='dark'] .toggleButton {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+html[data-theme='dark'] .toggleButton:hover {
+  background-color: var(--ifm-color-primary);
+}
+
+html[data-theme='dark'] .exerciseBlockSolution {
+  border: 1px solid var(--ifm-color-success-dark);
+  background-color: var(--ifm-color-success-darker);
+}
