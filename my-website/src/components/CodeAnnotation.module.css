@@ -1,0 +1,14 @@
+.codeAnnotation {
+  position: relative;
+  /* Styles to visually indicate that this block has annotations */
+  /* Perhaps a subtle border or background */
+}
+
+.annotationCallout {
+  background-color: var(--ifm-color-warning);
+  color: white;
+  padding: 0.5rem;
+  border-radius: var(--ifm-global-border-radius);
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+}

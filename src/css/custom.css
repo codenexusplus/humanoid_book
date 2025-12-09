@@ -1,0 +1,114 @@
+/* Custom CSS for the Physical AI textbook */
+
+/* Global Variables */
+:root {
+  /* Light Mode Colors */
+  --ifm-color-primary: #007bff; /* Example primary color */
+  --ifm-color-primary-dark: #0069d9;
+  --ifm-color-secondary: #6c757d; /* Example secondary color */
+  --ifm-color-accent: #28a745; /* Example accent color */
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #212529;
+  --ifm-code-background-color: #f8f8f8;
+  --ifm-code-font-color: #333333;
+}
+
+/* Dark Mode Colors */
+html[data-theme='dark'] {
+  --ifm-color-primary: #66b0ff;
+  --ifm-color-primary-dark: #4d93d4;
+  --ifm-color-secondary: #9ea7ae;
+  --ifm-color-accent: #4dd565;
+  --ifm-background-color: #282c34;
+  --ifm-font-color-base: #e0e0e0;
+  --ifm-code-background-color: #3f4450;
+  --ifm-code-font-color: #f8f8f2;
+}
+
+/* Typography */
+:root {
+  --ifm-font-family-base: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', 'Cascadia Code', 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.75rem;
+  --ifm-h4-font-size: 1.5rem;
+  --ifm-h5-font-size: 1.25rem;
+  --ifm-h6-font-size: 1rem;
+}
+
+/* Base styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-font-family-base);
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+}
+
+/* Base paragraph styles */
+p {
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+}
+
+/* Code block styling for light mode */
+:not(html[data-theme='dark']) .theme-code-block {
+  background-color: var(--ifm-code-background-color);
+  color: var(--ifm-code-font-color);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Code block styling for dark mode */
+html[data-theme='dark'] .theme-code-block {
+  background-color: var(--ifm-code-background-color);
+  color: var(--ifm-code-font-color);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Ensure WCAG 2.1 AA contrast compliance (example - actual values need careful calculation) */
+/* This is a placeholder; real compliance needs a color palette generated with accessibility in mind. */
+/* Example: ifm-color-primary must have contrast of at least 4.5:1 with ifm-background-color */
+/* Tools like WebAIM Contrast Checker can be used. */
+
+/* Table formatting */
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.markdown table thead tr {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+  text-align: left;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.markdown table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.markdown table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.markdown table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+html[data-theme='dark'] .markdown table tbody tr:nth-of-type(even) {
+  background-color: #3c414c;
+}
+
+html[data-theme='dark'] .markdown table th,
+html[data-theme='dark'] .markdown table td {
+  border: 1px solid #4a505c;
+}
+

@@ -1,0 +1,36 @@
+.diagramContainer {
+  position: relative;
+  margin: 1.5rem 0;
+  display: inline-block; /* Allows annotations to be positioned relative to image */
+}
+
+.diagramContainer.responsive {
+  width: 100%;
+  text-align: center;
+}
+
+.diagramContainer.responsive .diagramImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.diagramImage {
+  display: block;
+}
+
+.diagramAnnotation {
+  position: absolute;
+  background-color: var(--ifm-color-primary-light);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--ifm-global-border-radius);
+  font-size: 0.8em;
+  white-space: nowrap;
+  transform: translate(-50%, -50%); /* Centers the annotation relative to its position */
+  z-index: 10;
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .diagramAnnotation {
+  background-color: var(--ifm-color-primary-dark);
+}

@@ -1,0 +1,42 @@
+.alertBlock {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--ifm-global-border-radius);
+  border: 1px solid transparent;
+}
+
+.alertBlockTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.alertBlock--info {
+  background-color: var(--ifm-color-info-lighter);
+  border-color: var(--ifm-color-info);
+  color: var(--ifm-color-info-darkest);
+}
+
+.alertBlock--warning {
+  background-color: var(--ifm-color-warning-lighter);
+  border-color: var(--ifm-color-warning);
+  color: var(--ifm-color-warning-darkest);
+}
+
+.alertBlock--danger {
+  background-color: var(--ifm-color-danger-lighter);
+  border-color: var(--ifm-color-danger);
+  color: var(--ifm-color-danger-darkest);
+}
+
+.alertBlock--success {
+  background-color: var(--ifm-color-success-lighter);
+  border-color: var(--ifm-color-success);
+  color: var(--ifm-color-success-darkest);
+}
+
+/* Fallback/Default for other types or if custom CSS not fully set */
+.alertBlock {
+  background-color: var(--ifm-alert-background-color);
+  border-color: var(--ifm-alert-border-color);
+  color: var(--ifm-alert-color);
+}

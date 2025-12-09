@@ -1,0 +1,89 @@
+.codeAnnotationBlock {
+  margin: 1.5rem 0;
+  border-radius: var(--ifm-global-border-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.codeAnnotationTitle {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-top-left-radius: var(--ifm-global-border-radius);
+  border-top-right-radius: var(--ifm-global-border-radius);
+}
+
+.codeContentWrapper {
+  display: flex;
+  background-color: var(--ifm-code-background-color);
+  color: var(--ifm-code-font-color);
+  padding: 1rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9em;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.codeBlock {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  overflow: visible; /* Allow annotations to break out if needed */
+}
+
+.codeBlock code {
+  display: block; /* Each line takes full width */
+}
+
+.codeBlock code > div {
+  white-space: pre;
+  min-height: 1.5em; /* Ensure consistent line height */
+}
+
+.lineNumber {
+  display: inline-block;
+  width: 2.5em; /* Fixed width for line numbers */
+  text-align: right;
+  color: var(--ifm-color-gray-500);
+  padding-right: 0.5rem;
+  user-select: none; /* Prevent selection of line numbers */
+}
+
+.lineText {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.highlightedLine {
+  background-color: var(--ifm-color-warning-lighter);
+}
+
+.lineWithAnnotation .inlineAnnotation {
+  color: var(--ifm-color-primary-dark);
+  font-style: italic;
+  margin-left: 1em;
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .codeAnnotationTitle {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+html[data-theme='dark'] .codeContentWrapper {
+  background-color: var(--ifm-code-background-color);
+  color: var(--ifm-code-font-color);
+}
+
+html[data-theme='dark'] .lineNumber {
+  color: var(--ifm-color-gray-600);
+}
+
+html[data-theme='dark'] .highlightedLine {
+  background-color: var(--ifm-color-warning-darker);
+}
+
+html[data-theme='dark'] .lineWithAnnotation .inlineAnnotation {
+  color: var(--ifm-color-primary-light);
+}
